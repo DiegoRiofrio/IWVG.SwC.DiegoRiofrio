@@ -36,6 +36,19 @@ public class DecimalCollection {
 
     }
 
+    public double multiply() {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+
+        double mult = 1;
+        for (double item : this.collection) {
+            mult *= item;
+        }
+        return mult;
+    }
+
     public double higher() {
         assert collection != null;
         if (this.collection.isEmpty()) {
