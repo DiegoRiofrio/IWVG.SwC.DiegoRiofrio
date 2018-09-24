@@ -31,6 +31,11 @@ class DecimalCollectionTest {
     }
 
     @Test
+    void testMultiply() {
+        assertEquals(-12.0, this.decimalCollection.multiply(), 10e-5);
+    }
+
+    @Test
     void testSum() {
         assertEquals(6.0, this.decimalCollection.sum(), 10e-5);
     }
