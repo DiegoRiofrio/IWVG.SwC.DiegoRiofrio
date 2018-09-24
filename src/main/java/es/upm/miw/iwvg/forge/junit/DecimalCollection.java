@@ -43,6 +43,7 @@ public class DecimalCollection {
         }
 
         double mult = 1;
+
         for (double item : this.collection) {
             mult *= item;
         }
