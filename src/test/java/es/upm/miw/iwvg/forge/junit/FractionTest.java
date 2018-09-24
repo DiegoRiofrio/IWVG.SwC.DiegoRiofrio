@@ -36,4 +36,9 @@ class FractionTest {
     void testFraccionDecimal(){
         Assertions.assertEquals( 5, fraction.decimal(), 10e-5);
     }
+
+    @Test
+    void testIsPropia(){
+        Assertions.assertEquals( false, fraction.isPropia());
+    }
 }
