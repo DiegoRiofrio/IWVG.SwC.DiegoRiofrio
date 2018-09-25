@@ -41,4 +41,9 @@ class UserTest {
     void testUserFamilyName() {
         Assertions.assertEquals("Maradona", user.getFamilyName());
     }
+
+    @Test
+    void testToUpperCase(){
+        Assertions.assertEquals("DIEGO", this.user.getName().toUpperCase());
+    }
 }
