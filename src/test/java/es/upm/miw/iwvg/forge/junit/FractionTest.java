@@ -8,6 +8,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class FractionTest {
 
     private Fraction fraction;
@@ -42,5 +45,13 @@ class FractionTest {
         Assertions.assertEquals( false, fraction.isPropia());
         Fraction fraction_aux = new Fraction(2,4);
         Assertions.assertEquals( true, fraction_aux.isPropia());
+    }
+
+    @Test
+    void testIsEquivalent() {
+        Fraction fraction2 = new Fraction(this.fraction.getDenominator(), this.fraction.getNumerator());
+        assertTrue(this.fraction.isEquivalent(fraction2));
+        Fraction fraction3 = new Fraction(this.fraction.getNumerator(), this.fraction.getDenominator());
+        assertFalse(this.fraction.isEquivalent(fraction3));
     }
 }
