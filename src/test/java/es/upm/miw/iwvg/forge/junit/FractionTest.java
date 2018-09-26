@@ -48,6 +48,13 @@ class FractionTest {
     }
 
     @Test
+    void testIsImpropia(){
+        Assertions.assertEquals(true, fraction.isImpropia());
+        Fraction fraction_propia = new Fraction(1,5);
+        Assertions.assertEquals( false, fraction_propia.isImpropia());
+    }
+
+    @Test
     void testIsEquivalent() {
         Fraction fraction2 = new Fraction(this.fraction.getDenominator(), this.fraction.getNumerator());
         assertTrue(this.fraction.isEquivalent(fraction2));
