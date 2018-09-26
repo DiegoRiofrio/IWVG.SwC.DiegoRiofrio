@@ -40,6 +40,10 @@ public class Point {
         return this.y;
     }
 
+    public boolean isEquals(Point point){
+        return (this.x == point.getX() && this.y == point.getY());
+    }
+
     @Override
     public String toString() {
         return "Point{" +
