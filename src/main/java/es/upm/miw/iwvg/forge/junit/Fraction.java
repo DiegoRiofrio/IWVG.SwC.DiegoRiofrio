@@ -57,6 +57,10 @@ public class Fraction {
         return (numerator < denominator)?true:false;
     }
 
+    public boolean isImpropia(){
+        return this.numerator >= this.denominator;
+    }
+
     public boolean isEquivalent(Fraction fraction){
         return this.getNumerator() * fraction.getNumerator() == this.getDenominator() * fraction.getDenominator();
     }
