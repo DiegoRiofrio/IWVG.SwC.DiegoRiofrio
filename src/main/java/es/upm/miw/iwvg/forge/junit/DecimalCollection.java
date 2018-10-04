@@ -24,14 +24,7 @@ public class DecimalCollection {
         if (this.collection.isEmpty()) {
             throw new ArithmeticException("Empty collection");
         }
-        /*
-        double sum = 0;
-        for (double item : this.collection) {
-            sum += item;
-        }
-        return sum;
-        */
-        // return this.collection.stream().mapToDouble(value -> value).sum();
+
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
 
     }
@@ -39,7 +32,7 @@ public class DecimalCollection {
     public double multiply() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException("Empty collection2");
         }
 
         double mult = 1;
@@ -53,7 +46,7 @@ public class DecimalCollection {
     public double higher() {
         assert collection != null;
         if (this.collection.isEmpty()) {
-            throw new ArithmeticException("Empty collection");
+            throw new ArithmeticException("Empty collection3");
         }
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
