@@ -1,4 +1,7 @@
-# DIEGO
+# PRACTICA DE SOFTWARE COLABORATIVO
+# DIEGO RIOFRIO
+
+
 ### Estado del código
 
 
